@@ -1,3 +1,41 @@
+
+
+Задания для самостоятельного исследования
+
+1. Исследуйте сопоставление томов (volumes), так чтобы после работы контейнера mongodb данные, собранные через веб-интерфейс, были доступны в папке извне контейнера для дальнейшего повторного использования
+
+2. Дополните конфигурацию docker-compose контейнером nginx так, чтобы nginx служил прокси запросов с порта 80 на тот, на котором работает наше API (например 3000)
+
+Соответственно для пользователя запрос к API будет выглядеть более кратким:
+
+http://78.155.206.184/getalldocuments
+
+|
+v
+
+http://78.155.206.184:3000/api/templates?apiKey=ifna212ASFisfsjaAFFF
+
+
+
+
+
+
+Пожалуйста, отправьте POST-запрос с телом
+
+{ 
+   "name": "JSX",
+   "type": "declarative"
+}
+
+на адрес
+
+http://78.155.206.184:3000/api/templates?apiKey=ifna212ASFisfsjaAFFF
+
+
+curl -SLO 'https://raw.githubusercontent.com/GossJS/mongorestdocker/master/docker-compose.yml'
+
+
+
 # Description
 Node.js and Express.js REST API with MongoDB services Docker compose file. You can use this for launching a REST api on your server very quickly. 
 It will create a MongoDB database with admin and database users and a REST service that will allow you to get and send data from Mongo. It will expose 2 ports, one for connecting directly to Mongo and one for the API. 

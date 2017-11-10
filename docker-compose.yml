@@ -17,6 +17,7 @@ services:
     # We use mongostorage data volume and we will use the /data/db path for the database inside the container
     volumes: 
       - mongostorage:/data/db
+      - /sites/data/:/data/
     # Expose a MongoDB port to connect to, defined by the MONGODB_EXPOSED_PORT environment variable
     # and map this port to the 27017 internal port which is what MongoDB uses
     ports:
