@@ -1,3 +1,7 @@
+curl -SLO 'https://raw.githubusercontent.com/GossJS/mongorestdocker/master/docker-compose.yml'
+
+
+
 # Description
 Node.js and Express.js REST API with MongoDB services Docker compose file. You can use this for launching a REST api on your server very quickly. 
 It will create a MongoDB database with admin and database users and a REST service that will allow you to get and send data from Mongo. It will expose 2 ports, one for connecting directly to Mongo and one for the API. 
