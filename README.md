@@ -1,3 +1,15 @@
+Пожалуйста, отправьте POST-запрос с телом
+
+{ 
+   "name": "JSX",
+   "type": "declarative"
+}
+
+на адрес
+
+http://78.155.206.184:3000/api/templates?apiKey=ifna212ASFisfsjaAFFF
+
+
 curl -SLO 'https://raw.githubusercontent.com/GossJS/mongorestdocker/master/docker-compose.yml'
 
 
